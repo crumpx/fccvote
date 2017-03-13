@@ -112,11 +112,8 @@ export default {
       }, function(response){
         console.log('something wrong')
       })
-    },
-
-
-
-    },
+    }
+  },
     created: function(){
         this.fetchPoll(this.$route.params.id)
       },
