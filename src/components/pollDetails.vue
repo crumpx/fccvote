@@ -100,7 +100,9 @@ export default {
           console.log('something wrong')
         })
       },
-
+    toShow: function(){
+      return this.cookie === null ? 'showPoll' : 'showResult'
+    }
 
     },
 
