@@ -101,9 +101,7 @@ export default {
         })
       },
     toShow: function(){
-      return this.cookie === null ? 'showPoll' : 'showResult'
-    }
-
+      return this.cookie === null ? 'showPoll' : 'show'
     },
 
     getData: function() {
@@ -114,11 +112,13 @@ export default {
       }, function(response){
         console.log('something wrong')
       })
+    },
+
+
 
     },
     created: function(){
         this.fetchPoll(this.$route.params.id)
-
       },
 
     }
